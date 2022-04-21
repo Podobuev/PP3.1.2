@@ -4,8 +4,14 @@
     <title>Spring Security Example</title>
 </head>
 <body>
-<h1>Welcome to Index PAGE!</h1>
+<h1>Welcome to Kata!</h1>
 
+<h3> <a th:href="@{/login}"> Login </a> </h3>
+<h3> <a th:href="@{/registration}"> Registration </a> </h3>
+
+<form th:action="@{/logout}" th:method="post">
+    <input type="submit" th:value="Logoot">
+</form>
 
 </body>
 </html>
